@@ -2,6 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
+
+<style> 
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3CBC8D;
+  color: white;
+}
+</style>
+
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
@@ -9,6 +22,8 @@
 
 	<form action="/submit" method="post">
 		<label for="fname">First name:</label> <input type="text" id="fname"
+			name="firstname"><br>
+			<label for="fname">First name:</label> <input type="text" id="fname"
 			name="firstname"><br>
 		<br> <label for="lname">Last name:</label> <input type="text"
 			id="lname" name="lastname"><br>

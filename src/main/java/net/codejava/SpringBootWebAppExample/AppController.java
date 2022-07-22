@@ -15,6 +15,7 @@ public class AppController {
 		model.addAttribute("formName", "Admin Form");		
 		
 		return "newContact";
+		
 	}
 	
 	@RequestMapping("/list_contact")
@@ -23,7 +24,7 @@ public class AppController {
 		ContactBusiness business = new ContactBusiness();
 		List<Contact> contactList = business.getContactList();
 		
-		model.addAttribute("contacts", contactList);		
+		model.addAttribute("contacts", contactList);	
 		
 		return "contact";
 	}
